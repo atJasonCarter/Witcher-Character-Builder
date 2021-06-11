@@ -232,6 +232,23 @@ article{
 
 }
 
+.box{
+    display: none;
+
+}
+
+.boxIn{
+    display:inline-block;
+    position: relative;
+    padding: 12px;
+    background-color: var(--Grey900);
+    border-radius: 2px;
+    border: 1px solid var(--Grey800);
+    margin-bottom: 12px;
+    left: 24px;
+    width: auto;
+}
+
 
 .summary{
     width: 276px;

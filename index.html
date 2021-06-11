@@ -7,6 +7,9 @@
     <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
     <link rel="stylesheet" href="style.css">
 
+
+    <!-- toggle boxes -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         $(document).ready(function(){
             $('input[type="radio"]').click(function(){
@@ -17,7 +20,10 @@
             });
         });
     </script>
+
 </head>
+
+<!-- begin body -->
 <body>
     <nav>
         <ul class="nav">
@@ -45,7 +51,7 @@
         <div class="SelectionDiv">
             <!-- <div class="header">Choose your race:</div> -->
             <label class="radioContainer">Witcher
-                <input type="radio" checked="checked" name="Class" value="Witcher">
+                <input type="radio" name="Class" value="Witcher">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer"> Alchemist
@@ -97,9 +103,14 @@
         <div class="SelectionDiv">
             <!-- <div class="header">Choose your race:</div> -->
             <label class="radioContainer">Human
-                <input type="radio" checked="checked" name="race" value="Human">
+                <input type="radio" name="race" value="Human">
                 <span class="radioCheckmark"></span>
             </label>
+            <div class="Human box">
+                <div class="boxIn">
+                Humans are baisically like People
+                </div>  
+            </div>
             <label class="radioContainer"> Elf
                 <input type="radio" name="race" value="Elf">
                 <span class="radioCheckmark"></span>
