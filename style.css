@@ -128,6 +128,7 @@
     .subheaderSpan{
         color: var(--Green300);
         font-weight: 500;
+        display: inline;
     }
 
 
@@ -213,8 +214,8 @@ text-shadow: 2px 16px 18px var(--Green500);
 
 header{
    width: 100%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     position: relative;
     top:-48px;
 }
