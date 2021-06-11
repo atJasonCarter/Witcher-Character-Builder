@@ -170,7 +170,7 @@ body{
 }
 .bodyContainer{
     display:grid;
-    grid-template-columns: calc(100vw - 376px) 312px;
+    grid-template-columns: calc(100vw - 344px) 312px;
     width:100%;
     max-width: 100vw;
 }
@@ -355,3 +355,73 @@ box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
      left:4px;
      border-radius: 2px;
  }
+
+ /* buttons */
+button{
+    background-color: var(--Grey800);
+    color: var(--Grey300);
+    border-radius:2px;
+    border:none;
+    padding: 4px 12px;
+}
+button.nextBtn{
+    background-color: var(--Green700);
+}
+button.nextBtn:hover{
+    background-color: var(--Green300);
+    color: var(--Grey1000);
+    transition: all .15s ease-out;
+    cursor: pointer;
+}
+
+
+ /* footer */
+footer{
+    display: flex;
+    width:100vw;
+    height:auto;
+    bottom: 0;
+    border-top: 1px Solid var(--Grey800);
+    position:sticky;
+    margin: 0;
+    background-color: var(--Grey1000);
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 32px;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 12px;
+    width: 12px;
+    margin: 0 8px;
+    background-color: var(--Grey800);
+    border: none;
+    border-radius: 50%;
+    position: relative;
+ 
+  }
+  .stepContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: var(--Green300);
+  }

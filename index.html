@@ -78,7 +78,7 @@
             <label class="radioContainer">Other
                 <input type="radio" name="race">
                 <span class="radioCheckmark"> </span>
-                <input type="text" name="otherRace" class="other" id="otherRace"/>
+                <input type="text" name="otherRace" class="other" id="otherRace"  oninput="this.className = ''"/>
             </label>
         </div>
     </article>
@@ -101,5 +101,19 @@
         </div>
     </div>
 </div>
+<footer>
+   <div class="footerContainer">
+       
+    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    <div class="stepContainer">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+    </div>
+    <button class="nextBtn" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+
+    </div>
+</footer>
 </body>
 </html>
