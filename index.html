@@ -6,6 +6,17 @@
     <title>Build Your Character</title>
     <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        $(document).ready(function(){
+            $('input[type="radio"]').click(function(){
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".box").not(targetBox).hide();
+                $(targetBox).show();
+            });
+        });
+    </script>
 </head>
 <body>
     <nav>
@@ -34,43 +45,43 @@
         <div class="SelectionDiv">
             <!-- <div class="header">Choose your race:</div> -->
             <label class="radioContainer">Witcher
-                <input type="radio" checked="checked" name="Class">
+                <input type="radio" checked="checked" name="Class" value="Witcher">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer"> Alchemist
-                <input type="radio" name="Class">
+                <input type="radio" name="Class" value="Alchemis">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Sorcerer / Source
-                <input type="radio" name="Class">
+                <input type="radio" name="Class" value="Source">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Trainee
-                <input type="radio" name="Class">
+                <input type="radio" name="Class" value="Trainee">
                 <span class="radioCheckmark"></span>
             </label>           
              <label class="radioContainer">Monster
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Monser">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Soldier / Man at Arms
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Soldier">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Merchant
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Merchant">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Druid / Priest
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Druid">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Criminal
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Criminal">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Other
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="OtherClass">
                 <span class="radioCheckmark"> </span>
                 <input type="text" name="otherRace" class="other" id="otherRace"  oninput="this.className = ''"/>
             </label>
@@ -86,51 +97,51 @@
         <div class="SelectionDiv">
             <!-- <div class="header">Choose your race:</div> -->
             <label class="radioContainer">Human
-                <input type="radio" checked="checked" name="race">
+                <input type="radio" checked="checked" name="race" value="Human">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer"> Elf
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Elf">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Dwarf
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Dwarf">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Gnome
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Gnome">
                 <span class="radioCheckmark"></span>
             </label>           
              <label class="radioContainer">Goblin
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Goblin">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Higher Vampire
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Vampire">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Vran
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Vran">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Godling
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Godling">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Doppler
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Doppler">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Sylvan
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Sylvan">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Nymph
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="Nymph">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Other
-                <input type="radio" name="race">
+                <input type="radio" name="race" value="OtherRace">
                 <span class="radioCheckmark"> </span>
                 <input type="text" name="otherRace" class="other" id="otherRace"  oninput="this.className = ''"/>
             </label>
