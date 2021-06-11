@@ -158,7 +158,7 @@ body{
     flex-direction: column;
     max-width: 100vw;
 
-    color: var(--Grey400);
+    color: var(--Grey300);
     font-size: var(--s50);
     line-height: var(--LH50);
     font-family: Inter, "Helvetica Neue", Arial, sans-serif;
