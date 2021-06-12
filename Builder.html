@@ -27,7 +27,7 @@
 <body>
     <nav>
         <ul class="nav">
-            <li class="navLI">Character Builder</li>
+            <li class="navLI"><a href="/Builder.html" style="    color: var(--Grey300);"> Character Builder</a></li>
             <li class="navLI">Story</li>
             <li class="navLI">Maps</li>
             <li class="navLI">NPCs</li>
@@ -97,7 +97,7 @@
     <!-- Tab 2 -->
     <article class="tab">
         <div class="Subheader">
-            <span class=sub>02</span> Choose your race:
+            <span class=sub>02</span> Choose your <span class="subheaderSpan" style="color:var(--Red300);">Race:</span>
         </div>
         <div class="Vert"></div>
         <div class="SelectionDiv">
@@ -158,6 +158,85 @@
             </label>
         </div>
     </article>
+
+
+    <!-- age -->
+    <article class="tab">
+        <div class="Subheader">
+            <span style="color:var(--Orange300); opacity:.5;" class="sub">04</span> Choose your <span class="subheaderSpan" style="color:var(--Orange300);">Age:</span>
+        </div>
+        <div class="Vert"></div>
+        <div class="SelectionDiv">
+            <!-- <div class="header">Choose your race:</div> -->
+            <label class="radioContainer">Adolescent
+                <input type="radio" name="Age" value="Adolescent">
+                <span class="radioCheckmark"></span>
+            </label>
+                    <div class="Adolescent box">
+                        <div class="boxIn">
+                        Prone to mistakes. Many Mistakes.
+                        </div>  
+                    </div>
+            <label class="radioContainer"> Young
+                <input type="radio" name="Age" value="Young">
+                <span class="radioCheckmark"></span>
+            </label>
+                    <div class="Young box">
+                        <div class="boxIn">
+                        Getting started
+                        </div>  
+                    </div>
+            <label class="radioContainer">Middle Aged
+                <input type="radio" name="Age" value="MiddleAge">
+                <span class="radioCheckmark"></span>
+            </label>
+                    <div class="MiddleAge box">
+                        <div class="boxIn">
+                        Starting to get too old for this shit.
+                        </div>  
+                    </div>
+            <label class="radioContainer">Elder
+                <input type="radio" name="Age" value="Elder">
+                <span class="radioCheckmark"></span>
+            </label>           
+                    <div class="Elder box">
+                        <div class="boxIn">
+                        Wise, But not nearly as sprite as you once were. Knows when a fights not worth having anymore, But won't back down. 
+                        </div>  
+                    </div>
+        
+            <label class="radioContainer">Other
+                <input type="radio" name="Age" value="otherAge">
+                <span class="radioCheckmark"> </span>
+                <input type="text" name="otherAge" class="other" id="otherAge"  oninput="this.className = ''"/>
+            </label>
+        </div>
+    </article>
+
+        <!-- Gender-->
+        <article class="tab">
+            <div class="Subheader">
+                <span style="color:var(--Grey700); " class="sub">05</span> Choose your <span class="subheaderSpan" style="color:var(--Grey300);">Gender:</span>
+            </div>
+            <div class="Vert"></div>
+            <div class="SelectionDiv">
+                <!-- <div class="header">Choose your race:</div> -->
+                <label class="radioContainer">Male
+                    <input type="radio" name="Gender" value="Male">
+                    <span class="radioCheckmark"></span>
+                </label>
+
+                <label class="radioContainer"> Female
+                    <input type="radio" name="Gender" value="Female">
+                    <span class="radioCheckmark"></span>
+                </label>
+                <label class="radioContainer">Other
+                    <input type="radio" name="Gender" value="Gender">
+                    <span class="radioCheckmark"> </span>
+                    <input type="text" name="otherGender" class="other" id="otherGender"  oninput="this.className = ''"/>
+                </label>
+            </div>
+        </article>
 </div>
     <!-- Summary -->
     <div class="summary">

@@ -236,6 +236,15 @@ article{
     display: none;
 
 }
+a{
+    all:unset;
+}
+a:visited{
+    color: var(--Grey600);
+}
+a:active{
+    color: var(--Grey300);
+}
 
 .boxIn{
     display:inline-block;
