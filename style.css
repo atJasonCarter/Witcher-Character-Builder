@@ -321,7 +321,27 @@ box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
     padding-left: 0px;
     position: relative;
 }
-
+.summaryFooter{
+position: absolute;
+bottom:8px;
+display: flex;
+flex-direction: column;
+width: calc(100% - 32px);
+}
+.summaryFooterContainer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 16px;
+}
+.CharacterName{
+    display: flex;
+    flex-direction: column;
+}
+.summarySubmit{
+    max-height: 23px;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
 
 
 
