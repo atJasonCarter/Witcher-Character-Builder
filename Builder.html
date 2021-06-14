@@ -20,6 +20,17 @@
             });
         });
     </script>
+            <!-- <script>
+                $(document).ready(function(){
+                    $('input[type="radio"]').click(function(){
+                        var inputValue = $(this).attr("value");
+                        var subTarget = $("." + inputValue);
+                        $(".box2").not(subTarget).hide();
+                        $(subTarget).show();
+                    });
+                });
+            </script> -->
+
 
 </head>
 
@@ -53,7 +64,59 @@
             <label class="radioContainer">Witcher
                 <input type="radio" name="Class" value="Witcher">
                 <span class="radioCheckmark"></span>
-            </label>
+            </label>    
+                            <div class="Witcher box">
+                                <div class="boxIn">
+                                    <label class="radioContainer">Bear School
+                                        <input type="radio" name="WitcherSchool" value="BearSchool">
+                                        <span class="radioCheckmark"></span>
+                                    </label> 
+                                    <label class="radioContainer">Cat School
+                                        <input type="radio" name="WitcherSchool" value="CatSchool">
+                                        <span class="radioCheckmark"></span>
+                                    </label> 
+                                    <label class="radioContainer">Crane School
+                                        <input type="radio" name="WitcherSchool" value="CraneSchool">
+                                        <span class="radioCheckmark"></span>
+                                    </label> 
+                                                <div class="CraneSchool box2">
+                                                    <div class="boxOut">
+                                                        Armed with a long rope, a hook, and a belt full of Guns, Harpoons,and Swords, Crane School Witchers excell at destroying Sea Monsters.
+                                                    </div>
+                                                </div>
+                                    <label class="radioContainer">Griffin School
+                                        <input type="radio" name="WitcherSchool" value="GriffinSchool">
+                                        <span class="radioCheckmark"></span>
+                                    </label> 
+                                    <label class="radioContainer">Manticore School
+                                        <input type="radio" name="WitcherSchool" value="ManticoreSchool">
+                                        <span class="radioCheckmark"></span>
+                                    </label> 
+                                    <label class="radioContainer">Viper School
+                                        <input type="radio" name="WitcherSchool" value="ViperSchool">
+                                        <span class="radioCheckmark"></span>
+                                    </label> 
+                                    <label class="radioContainer">Wolf School
+                                        <input type="radio" name="WitcherSchool" value="WolfSchool">
+                                        <span class="radioCheckmark"></span>
+                                    </label> 
+                                    <div class="Subheader">
+                                        Non-Cannon Schools
+                                    </div>
+                                    <label class="radioContainer">Wolf School
+                                        <input type="radio" name="WitcherSchool" value="WolfSchool">
+                                        <span class="radioCheckmark"></span>
+                                    </label> 
+                                    <label class="radioContainer">Wolf School
+                                        <input type="radio" name="WitcherSchool" value="WolfSchool">
+                                        <span class="radioCheckmark"></span>
+                                    </label> 
+                                    <label class="radioContainer">Wolf School
+                                        <input type="radio" name="WitcherSchool" value="WolfSchool">
+                                        <span class="radioCheckmark"></span>
+                                    </label> 
+                                </div>  
+                            </div>
             <label class="radioContainer"> Alchemist
                 <input type="radio" name="Class" value="Alchemis">
                 <span class="radioCheckmark"></span>
@@ -67,29 +130,29 @@
                 <span class="radioCheckmark"></span>
             </label>           
              <label class="radioContainer">Monster
-                <input type="radio" name="race" value="Monser">
+                <input type="radio" name="Class" value="Monser">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Soldier / Man at Arms
-                <input type="radio" name="race" value="Soldier">
+                <input type="radio" name="Class" value="Soldier">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Merchant
-                <input type="radio" name="race" value="Merchant">
+                <input type="radio" name="Class" value="Merchant">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Druid / Priest
-                <input type="radio" name="race" value="Druid">
+                <input type="radio" name="Class" value="Druid">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Criminal
-                <input type="radio" name="race" value="Criminal">
+                <input type="radio" name="Class" value="Criminal">
                 <span class="radioCheckmark"></span>
             </label>
             <label class="radioContainer">Other
-                <input type="radio" name="race" value="OtherClass">
+                <input type="radio" name="Class" value="OtherClass">
                 <span class="radioCheckmark"> </span>
-                <input type="text" name="otherRace" class="other" id="otherRace"  oninput="this.className = ''"/>
+                <input type="text" name="OtherClass" class="other" id="OtherClass"  oninput="this.className = ''"/>
             </label>
         </div>
     </article>
@@ -160,7 +223,7 @@
     </article>
 
 
-    <!-- age -->
+    <!-- age  Tab 4 -->
     <article class="tab">
         <div class="Subheader">
             <span style="color:var(--Orange300); opacity:.5;" class="sub">04</span> Choose your <span class="subheaderSpan" style="color:var(--Orange300);">Age:</span>

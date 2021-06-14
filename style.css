@@ -234,8 +234,12 @@ article{
 
 .box{
     display: none;
-
 }
+.box2{
+    display: none;
+}
+
+
 a{
     all:unset;
 }
@@ -255,6 +259,17 @@ a:active{
     border: 1px solid var(--Grey800);
     margin-bottom: 12px;
     left: 24px;
+    width: auto;
+}
+.boxOut{
+    display:inline-block;
+    position: relative;
+    padding: 12px;
+    background-color: var(--Grey1000);
+    border-radius: 2px;
+    border: 1px solid var(--Grey800);
+    margin-bottom: 12px;
+
     width: auto;
 }
 
