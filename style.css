@@ -387,6 +387,10 @@ width: calc(100% - 32px);
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    background-color: var(--Grey900);
+    border: 1px solid var(--Grey900);
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
   }
   
   /* Hide the browser's default radio button */

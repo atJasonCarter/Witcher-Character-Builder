@@ -21,8 +21,23 @@
             });
         });
     </script>
-<!-- Want to add script to toggle any sub boxes here, that wouldnt affect primary boxes -->
 
+
+<!-- Want to add script to toggle any sub boxes here, that wouldnt affect primary boxes -->
+<!--
+<script>
+    $(document).ready(function(){
+        $(document.getElementsByClassName="boxIn").ready(function(){
+            $('input[type="radio"]').click(function(){
+            var inputValue2 = $(this).attr("value");
+            var targetBox2 = $("." + inputValue2);
+            $(".box2").not(targetBox2).hide();
+            $(targetBox2).show();
+        });
+        });
+    });
+</script>
+  -->
 
 </head>
 
@@ -48,7 +63,7 @@
     <!-- Tab 1 -->
     <article class="tab">
         <div class="Subheader">
-            <span class=sub>01</span> Choose your <span class="subheaderSpan">Class</span>:
+            <span class="sub">01</span> Choose your <span class="subheaderSpan">Class</span>:
         </div>
         <div class="Vert"></div>
         <div class="SelectionDiv">
@@ -194,7 +209,7 @@
     <!-- Tab 2 -->
     <article class="tab">
         <div class="Subheader">
-            <span class=sub>02</span> Choose your <span class="subheaderSpan" style="color:var(--Red300);">Race:</span>
+            <span class="sub">02</span> Choose your <span class="subheaderSpan" style="color:var(--Red300);">Race:</span>
         </div>
         <div class="Vert"></div>
         <div class="SelectionDiv">
@@ -337,7 +352,7 @@
 </div>
     <!-- Summary -->
     <div class="summary">
-        <span class=SummarySub>Your Character</span> 
+        <span class="SummarySub">Your Character</span> 
         <div class="SummaryDivLine"></div>
         <div class="SummarySubheader">
             Race
