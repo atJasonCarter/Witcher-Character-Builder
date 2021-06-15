@@ -254,22 +254,24 @@ a:active{
     display:inline-block;
     position: relative;
     padding: 12px;
-    background-color: var(--Grey900);
-    border-radius: 2px;
+    background-color: var(--Grey800);
+    border-radius: 0px 0px 2px 2px;
     border: 1px solid var(--Grey800);
     margin-bottom: 12px;
-    left: 24px;
+    /* left: 24px; */
     width: auto;
+    top:-13px;
+    border
 }
 .boxOut{
     display:inline-block;
     position: relative;
     padding: 12px;
     background-color: var(--Grey1000);
-    border-radius: 2px;
-    border: 1px solid var(--Grey800);
+    border-radius: 0px 0px 2px 2px;
+    /* border: 1px solid var(--Grey800); */
     margin-bottom: 12px;
-
+    top:-13px;
     width: auto;
 }
 
@@ -379,7 +381,7 @@ width: calc(100% - 32px);
 .radioContainer {
     display: block;
     position: relative;
-    padding-left: 35px;
+    padding: 8px 8px 8px 35px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
@@ -403,7 +405,7 @@ width: calc(100% - 32px);
   /* Create a custom radio button */
   .radioCheckmark {
     position: absolute;
-    top: 6px;
+    top: 14px;
     left: 8px;
     height: 16px;
     width: 16px;
