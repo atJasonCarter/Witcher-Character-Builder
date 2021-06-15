@@ -404,7 +404,7 @@ width: calc(100% - 32px);
   .radioCheckmark {
     position: absolute;
     top: 6px;
-    left: 0;
+    left: 8px;
     height: 16px;
     width: 16px;
     background-color:var(--Grey500);
