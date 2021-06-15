@@ -330,7 +330,7 @@ width: calc(100% - 32px);
 }
 .summaryFooterContainer{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2.75fr 1fr;
     grid-column-gap: 16px;
 }
 .CharacterName{
@@ -351,10 +351,11 @@ width: calc(100% - 32px);
     top: 1px;
     position: relative;
     color: var(--Grey100);
-    padding-left: 6px;
+    padding-left: -4px;
     font-size: var(--s50);
     line-height: var(--LH50);
     font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+    transition: all .3s ease-in-out;
 }
 #CharacterName:focus{
     all:unset;
@@ -369,6 +370,7 @@ width: calc(100% - 32px);
     position: relative;
     color: var(--Grey100);
     padding-left: 6px;
+    transition: all .3s ease-in-out;
 }
 
 
