@@ -251,7 +251,7 @@ a:active{
 }
 
 .boxIn{
-    display:inline-block;
+    display:block;
     position: relative;
     padding: 12px;
     background-color: var(--Grey800);
