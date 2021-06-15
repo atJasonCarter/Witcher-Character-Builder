@@ -442,8 +442,7 @@ width: calc(100% - 32px);
      display: inline;
      position: relative;
      opacity: 1;
-     height: 18px;
-     width:128px;
+
      background-color: var(--Grey900);
      border: 1px solid var(--Grey800);
      color: var(--Grey200);

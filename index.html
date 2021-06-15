@@ -10,6 +10,7 @@
 
     <!-- toggle boxes -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Want this to toggle just the primary box -->
     <script>
         $(document).ready(function(){
             $('input[type="radio"]').click(function(){
@@ -20,7 +21,7 @@
             });
         });
     </script>
-
+<!-- Want to add script to toggle any sub boxes here, that wouldnt affect primary boxes -->
 
 
 </head>
@@ -51,17 +52,27 @@
         </div>
         <div class="Vert"></div>
         <div class="SelectionDiv">
+
+
             <!-- <div class="header">Choose your race:</div> -->
             <label class="radioContainer">Witcher
                 <input type="radio" name="Class" value="Witcher">
                 <span class="radioCheckmark"></span>
             </label>    
+
+                          <!-- Primary Boxes-->
                             <div class="Witcher box">
                                 <div class="boxIn">
                                     <label class="radioContainer">Bear School
                                         <input type="radio" name="WitcherSchool" value="BearSchool">
                                         <span class="radioCheckmark"></span>
                                     </label> 
+                                      <!-- SubBoxes -->
+                                            <div class="CraneSchool box2">
+                                                <div class="boxOut">
+                                                    Armed with a long rope, a hook, and a belt full of Guns, Harpoons,and Swords, Crane School Witchers excel at destroying Sea Monsters.
+                                                </div>
+                                            </div>
                                     <label class="radioContainer">Cat School
                                         <input type="radio" name="WitcherSchool" value="CatSchool">
                                         <span class="radioCheckmark"></span>
