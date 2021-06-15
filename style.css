@@ -342,6 +342,34 @@ width: calc(100% - 32px);
     justify-self: flex-end;
     align-self: flex-end;
 }
+#CharacterName{
+    background-color: var(--Grey900);
+    border: 1px solid var(--Grey900);
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 24px;
+    top: 1px;
+    position: relative;
+    color: var(--Grey100);
+    padding-left: 6px;
+    font-size: var(--s50);
+    line-height: var(--LH50);
+    font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+}
+#CharacterName:focus{
+    all:unset;
+    font-size: var(--s50);
+    line-height: var(--LH50);
+    background-color: var(--Grey1000);
+    border: 1px solid var(--Grey800);
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 24px;
+    top: 1px;
+    position: relative;
+    color: var(--Grey100);
+    padding-left: 6px;
+}
 
 
 
